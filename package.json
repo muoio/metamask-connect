@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "serve": "static-server . --port 1812"
+  },
+  "files": [
+    "/contract.js",
+    "/index.html"
+  ],
+  "devDependencies": {
+    "@metamask/eslint-config": "^2.0.0",
+    "static-server": "^2.2.1"
+  }
+}
