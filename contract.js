@@ -60,14 +60,14 @@ async function display_account(){
 }
 
 function isMetaMaskInstalled(){
-		//Have to check the ethereum binding on the window object to see if it's installed
-		try{
-			const { ethereum } = window;
-			return Boolean(ethereum && ethereum.isMetaMask);
-		}catch{
-			return false;
-		}
+	//Have to check the ethereum binding on the window object to see if it's installed
+	try{
+		const { ethereum } = window;
+		return Boolean(ethereum && ethereum.isMetaMask);
+	}catch{
+		return false;
 	}
+
 };
 async function isMetaMaskConnected(){
 	let address_arr = await ethereum.request({method:'eth_accounts'});
