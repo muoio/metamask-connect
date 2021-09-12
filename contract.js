@@ -31,7 +31,7 @@ async function MetaMaskClientCheck() {
 
 		}
 	}
-
+}
 disconect.addEventListener('click', async function() {
 	localStorage.setItem('displayConnect', 'hide');
 	hide_account();
