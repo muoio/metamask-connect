@@ -68,12 +68,11 @@ function isMetaMaskInstalled(){
 			return false;
 		}
 	}
-	async function isMetaMaskConnected(){
-		let address_arr = await ethereum.request({method:'eth_accounts'});
-		return address_arr.length > 0;
-	}
 };
-
+async function isMetaMaskConnected(){
+	let address_arr = await ethereum.request({method:'eth_accounts'});
+	return address_arr.length > 0;
+}
 
 
 async function onClickConnect(){
